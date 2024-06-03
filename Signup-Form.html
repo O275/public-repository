@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup Form</title>
+    </head>
+    <body>
+        <form action="/submit" method="post">
+            <fieldset>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="github-username">Github Username:</label>
+                <input type="text" id="github-username" name="github-username" required><br><br>
+
+                <label>Type:</label><br>
+                <input type="radio" id="enterprise" name="account-type" value="enterprise" required>
+                <label for="enterprise">Enterprise</label><br>
+
+                <input type="radio" id="pro" name="account-type" value="pro" required>
+                <label for="pro">Pro</label><br>
+
+                <input type="radio" id="free" name="account-type" value="free" required>
+                <label for="free">Free</label><br><br>
+
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Remember Me</label><br><br>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </body>
+    </html>
